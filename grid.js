@@ -1,14 +1,15 @@
 // grid of squares
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
-	background(255);
+    createCanvas(windowWidth, windowHeight);
+    background(255);
 
-	rectMode(CENTER);
-	// grid of squares
-	for (let i = 100; i <= width-100; i += 100) {
-		for (let j = 100; j <= height-100; j += 100) {
-			rect(i, j, 90, 90);
-		}
-	}
+    rectMode(CENTER);
+    let margin = 100;
+    // grid of squares
+    for (let x = margin; x <= width-margin; x += 100) {
+        for (let y = margin; y <= height-margin; y += 100) {
+            rect(x, y, 90, 90);
+        }
+    }
 }
