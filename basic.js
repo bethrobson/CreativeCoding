@@ -4,8 +4,8 @@ function setup() {
 	rectMode(CENTER);
 	noFill();
 	stroke(0);
-	let squareSize = 90;
-	let numSquares = 50;
+	let squareSize = 50;
+	let numSquares = 30;
 	for (let i = 0; i < numSquares; i++) {
 		let x = random(100, width-(squareSize + 100));
 		let y = random(100, height-(squareSize + 100));
