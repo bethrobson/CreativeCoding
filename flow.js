@@ -1,7 +1,6 @@
 // With thanks to Barney Codes, "Easy Perlin Noise Flow Fields" 
 // https://www.youtube.com/watch?v=YcdldZ1E9gU
 
-let looping = true;
 let particles = [];
 const numParticles = 5000;
 
@@ -37,9 +36,8 @@ function onScreen(v) {
 }
 
 function mousePressed() {
-	if (looping) { noLoop(); }
+	if (isLooping()) { noLoop(); }
 	else { loop(); }
-	looping = !looping;
 }
 
 // reseed the noise function
