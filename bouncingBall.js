@@ -2,7 +2,6 @@
  * Bouncing Ball
  */
 
-let looping = true;
 let x, y;
 let xSpeed, ySpeed;
 
@@ -40,9 +39,8 @@ function displayBall() {
 
 // extras!
 function mousePressed() {
-	if (looping) { noLoop(); }
+	if (isLooping()) { noLoop(); }
 	else { loop(); }
-	looping = !looping;
 }
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
