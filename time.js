@@ -1,5 +1,3 @@
-let looping = true;
-
 let angle = 0;
 let x = 0;
 let y = 0;
@@ -27,7 +25,6 @@ function draw() {
 }
 
 function mousePressed() {
-	if (looping) { noLoop(); }
+	if (isLooping()) { noLoop(); }
 	else { loop(); }
-	looping = !looping;
 }
