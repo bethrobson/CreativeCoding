@@ -1,5 +1,3 @@
-let looping = true;
-
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255);
@@ -43,8 +41,7 @@ function makeQuad(w, h, r) {
 }
 
 function mousePressed() {
-	looping = !looping;
-	if (looping) { noLoop(); }
+	if (isLooping()) { noLoop(); }
 	else { loop(); }
 }
 
