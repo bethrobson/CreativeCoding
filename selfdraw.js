@@ -2,7 +2,6 @@
 // This is the program that makes the design for our
 // course page on O'Reilly Learning
 //
-let looping = true;
 let x, y;
 let xoff = 0;
 let yoff = 0;
@@ -57,7 +56,6 @@ function draw2() {
 }
 
 function mousePressed() {
-    if (looping) { noLoop(); }
+    if (isLooping()) { noLoop(); }
     else { loop(); }
-    looping = !looping;
 }
