@@ -2,7 +2,6 @@
  * Pong
  */
 
-let looping = true;
 let x, y;
 let xSpeed, ySpeed;
 
@@ -56,8 +55,7 @@ function windowResized() {
 function keyPressed() {
 	console.log(key);
 	if (key == "s") {
-		looping = !looping;
-		if (looping) { noLoop(); }
-    	else { loop(); }
+		if (isLooping()) { noLoop(); }
+    		else { loop(); }
 	}
 }
