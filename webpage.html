@@ -4,26 +4,35 @@
 <!--<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>-->
 <script src="./lib/p5.min.js"></script>
 <script src="webpage.js"></script>
+<script>
+window.onload = function() {
+    let button = document.getElementById("button");
+    button.onclick = function() {
+        drawSquares();
+    };
+};
+</script>
 <style>
 html, body {
     margin: 0px;
     padding: 0px;
-	font-family: Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 canvas {
     display: block;
 }
-section#main {
-	margin: 10px;
+section {
+    margin: 10px;
 }
 </style>
 </head>
 <body>
 <main>
 </main>
-<section id="main">
+<section>
 <h1>Elisabeth's Web Page</h1>
 <p>All about me, here!</p>
+<button id="button">Redraw</button>
 </section>
 </body>
 </html>
